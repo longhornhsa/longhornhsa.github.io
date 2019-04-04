@@ -1,132 +1,157 @@
-(function ($) {
-  "use strict";
+/*global $, jQuery, alert*/
+$(document).ready(function() {
 
-  // Preloader (if the #preloader div exists)
-  $(window).on('load', function () {
-    if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function () {
-        $(this).remove();
+  'use strict';
+
+  // ========================================================================= //
+  //  //SMOOTH SCROLL
+  // ========================================================================= //
+
+
+  $(document).on("scroll", onScroll);
+
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    $(document).off("scroll");
+
+    $('a').each(function() {
+      $(this).removeClass('active');
+      if ($(window).width() < 768) {
+        $('.nav-menu').slideUp();
+      }
+    });
+
+    $(this).addClass('active');
+
+    var target = this.hash,
+        menu = target;
+
+    target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': target.offset().top - 80
+    }, 500, 'swing', function() {
+      window.location.hash = target.selector;
+      $(document).on("scroll", onScroll);
+    });
+  });
+
+
+  function onScroll(event) {
+    if ($('.home').length) {
+      var scrollPos = $(document).scrollTop();
+      $('nav ul li a').each(function() {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
       });
     }
-  });
-
-  // Back to top button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
-    }
-  });
-  $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-    return false;
-  });
-
-  // Initiate the wowjs animation library
-  new WOW().init();
-
-  // Header scroll class
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
-    } else {
-      $('#header').removeClass('header-scrolled');
-    }
-  });
-
-  if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
   }
 
-  // Smooth scroll for the navigation and links with .scrollto classes
-  $('.main-nav a, .mobile-nav a, .scrollto').on('click', function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      if (target.length) {
-        var top_space = 0;
+  // ========================================================================= //
+  //  //NAVBAR SHOW - HIDE
+  // ========================================================================= //
 
-        if ($('#header').length) {
-          top_space = $('#header').outerHeight();
 
-          if (! $('#header').hasClass('header-scrolled')) {
-            top_space = top_space - 40;
-          }
-        }
-
-        $('html, body').animate({
-          scrollTop: target.offset().top - top_space
-        }, 1500, 'easeInOutExpo');
-
-        if ($(this).parents('.main-nav, .mobile-nav').length) {
-          $('.main-nav .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
-        }
-
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-          $('.mobile-nav-overly').fadeOut();
-        }
-        return false;
-      }
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll > 200 ) {
+      $("#main-nav, #main-nav-subpage").slideDown(700);
+      $("#main-nav-subpage").removeClass('subpage-nav');
+    } else {
+      $("#main-nav").slideUp(700);
+      $("#main-nav-subpage").hide();
+      $("#main-nav-subpage").addClass('subpage-nav');
     }
   });
 
-  // Navigation active state on scroll
-  var nav_sections = $('section');
-  var main_nav = $('.main-nav, .mobile-nav');
-  var main_nav_height = $('#header').outerHeight();
+  // ========================================================================= //
+  //  // RESPONSIVE MENU
+  // ========================================================================= //
 
-  $(window).on('scroll', function () {
-    var cur_pos = $(this).scrollTop();
-  
-    nav_sections.each(function() {
-      var top = $(this).offset().top - main_nav_height,
-          bottom = top + $(this).outerHeight();
-  
-      if (cur_pos >= top && cur_pos <= bottom) {
-        main_nav.find('li').removeClass('active');
-        main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('active');
+  $('.responsive').on('click', function(e) {
+    $('.nav-menu').slideToggle();
+  });
+
+  // ========================================================================= //
+  //  Typed Js
+  // ========================================================================= //
+
+  var typed = $(".typed");
+
+  $(function() {
+    typed.typed({
+      strings: ["Navratri", "Diwali", "Sankranti", "Hinduism Awareness Week", "Holi",],
+      typeSpeed: 100,
+      loop: true,
+    });
+  });
+
+
+  // ========================================================================= //
+  //  Owl Carousel Services
+  // ========================================================================= //
+
+
+  $('.services-carousel').owlCarousel({
+      autoplay: true,
+      loop: true,
+      margin: 20,
+      dots: true,
+      nav: false,
+      responsiveClass: true,
+      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+    });
+
+  // ========================================================================= //
+  //  magnificPopup
+  // ========================================================================= //
+
+  var magnifPopup = function() {
+    $('.popup-img').magnificPopup({
+      type: 'image',
+      removalDelay: 300,
+      mainClass: 'mfp-with-zoom',
+      gallery: {
+        enabled: true
+      },
+      zoom: {
+        enabled: true, // By default it's false, so don't forget to enable it
+
+        duration: 300, // duration of the effect, in milliseconds
+        easing: 'ease-in-out', // CSS transition easing function
+
+        // The "opener" function should return the element from which popup will be zoomed in
+        // and to which popup will be scaled down
+        // By defailt it looks for an image tag:
+        opener: function(openerElement) {
+          // openerElement is the element on which popup was initialized, in this case its <a> tag
+          // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+          return openerElement.is('img') ? openerElement : openerElement.find('img');
+        }
       }
     });
+  };
+
+
+  // Call the functions
+  magnifPopup();
+
+});
+
+// ========================================================================= //
+//  Porfolio isotope and filter
+// ========================================================================= //
+$(window).load(function(){
+
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-thumbnail',
+    layoutMode: 'fitRows'
   });
 
-  // jQuery counterUp (used in Whu Us section)
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
+  $('#portfolio-flters li').on( 'click', function() {
+    $("#portfolio-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
 
-  // Porfolio isotope and filter
-  $(window).on('load', function () {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item'
-    });
-    $('#portfolio-flters li').on( 'click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-  
-      portfolioIsotope.isotope({ filter: $(this).data('filter') });
-    });
-  });
-
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
-
-  // Clients carousel (uses the Owl Carousel library)
-  $(".clients-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
-    }
-  });
-
-})(jQuery);
-
+})
