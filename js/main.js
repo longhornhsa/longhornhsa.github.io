@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Alex Smith.", "Designer.", "Developer.", "Freelancer.", "Photographer"],
+      strings: ["Navratri", "Diwali", "Sankranti", "Hinduism Awareness Week", "Holi"],
       typeSpeed: 100,
       loop: true,
     });
