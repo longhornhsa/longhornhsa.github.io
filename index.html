@@ -202,7 +202,22 @@
 
     <div class="container">
       <div class="section-title text-center">
-        <h2>My Portfolio</h2>
+        <h2>
+          <div style="width:50%;height:50%;" id="bodymovin1"></div>
+
+          <script>
+              var animData = {
+                  wrapper: document.getElementById('bodymovin1'),
+                  animType: 'svg',
+                  loop: true,
+                  autoplay: true,
+                  path: 'Events Anim.json'
+          
+              };
+              var anim = bodymovin.loadAnimation(animData);
+              bodymovin.setSubframeRendering(true);
+          </script>
+          </h2>
       </div>
     </div>
 
