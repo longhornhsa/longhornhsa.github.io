@@ -377,7 +377,20 @@
       <div class="container">
         <div class="section-title text-center">
           <h2>
-              Core
+            <div style="width:50%;height:50%;" id="bodymovin4"></div>
+
+            <script>
+                var animData = {
+                    wrapper: document.getElementById('bodymovin4'),
+                    animType: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: 'Core Header.json'
+            
+                };
+                var anim = bodymovin.loadAnimation(animData);
+                bodymovin.setSubframeRendering(true);
+            </script>
               
           </h2>
         </div>
