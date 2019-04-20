@@ -236,6 +236,7 @@ nav ul li a {
   color: #afafaf;
 }
 
+
 /*----------------------------------------------------------------------------------*/
 /*  Header
 /*-----------------------------------------------------------------------------------*/
@@ -681,19 +682,7 @@ nav ul li a {
   margin: 0 2px;
 }
 
-.overlay-mf {
-  background-color: #a11d15;
-}
 
-.overlay-mf {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  opacity: .2;
-}
 .counter-box {
   color: #fff;
   text-align: center;
@@ -713,4 +702,106 @@ nav ul li a {
 .counter-num .counter {
   font-size: 2rem;
   margin-bottom: 0;
+}
+
+
+#badges {
+  background: #fff;
+  padding: 0px 0 0px 0;
+  margin: auto;
+}
+
+#badges .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#badges .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 125px;
+}
+
+#badges .member .pic img {
+  max-width: 50%;
+}
+
+#badges .member h4 {
+  font-weight: 550;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+#badges .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+#badges .member .social {
+  margin-top: 15px;
+}
+
+#badges .member .social a {
+  color: #b3b3b3;
+}
+
+#badges .member .social a:hover {
+  color: #2dc997;
+}
+
+#badges .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.ico-circle {
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px #A11D15;
+  display: block;
+}
+.service-box {
+  background-color: #fff;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.service-box:hover .ico-circle {
+  transition: all 500ms ease;
+  color: #fff;
+  background-color:  #EC7B22;
+  box-shadow: 0 0 0 10px rgb(218, 173, 138);
+}
+
+.service-box .service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.service-box .ico-circle {
+  transition: all 500ms ease;
+  font-size: 4rem;
+}
+
+.service-box .s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .4rem 0;
+}
+
+.service-box .s-description {
+  color: #4e4e4e;
+}
+
+.imgbadge{
+  height: 10px;
+  width: 10px;
 }
