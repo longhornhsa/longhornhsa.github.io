@@ -32,13 +32,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  color: #292929;
+  color: #A11D15;
   font-weight: 600;
 }
 
 h4 {
-  color: #292929;
+  color: #A11D15;
   font-size: 14px;
+  font-weight: 600;
+}
+h6 {
+  color: #A11D15;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -329,7 +334,7 @@ nav ul li a {
 #services {
   background: #f7f7f7;
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .owl-item {
