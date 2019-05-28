@@ -10,7 +10,7 @@
 /*-----------------------------------------------------------------------------------*/
 
 body {
-  background: #ffffff;
+  background: #614051;
   color: #898989;
   font-family: brandon-grotesque, sans-serif;
   font-size: 15px;
@@ -32,10 +32,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  color: #614051;
+  color: #ffffff;
   font-weight: 600;
 }
-
+h3 {
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 900;
+}
 h4 {
   color: #614051;
   font-size: 14px;
@@ -452,8 +456,8 @@ nav ul li a {
 #portfolio .about-descr .p-heading {
   font-family: brandon-grotesque, sans-serif;
   font-size: 50px;
-  text-align: center
-  color: #614051;
+  text-align: center;
+  color: #ffffff;
 }
 
 #portfolio .portfolio-list {
@@ -484,7 +488,7 @@ nav ul li a {
 }
 
 #portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
-  color: #614051;
+  color: #ffffff;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
