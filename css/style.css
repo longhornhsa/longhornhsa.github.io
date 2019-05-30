@@ -458,44 +458,8 @@ nav ul li a {
   max-width: 100%;
 }
 
-#outer-box {
-  width: 300px;
-  height: 200px;
-  display: block;
-  position: relative;
-  margin: auto;
-}
-/* line 9, ../sass/style.scss */
-#outer-box img {
-  width: 300px;
-  height: auto;
-  margin: auto;
-}
-/* line 14, ../sass/style.scss */
-#outer-box #inner-box {
-  background: #A11D15;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  position: absolute;
-  padding: 0;
-  transition: opacity .5s;
-  margin: auto;
-}
-/* line 25, ../sass/style.scss */
-#outer-box #inner-box p {
-  color: #fff;
-  line-height: 150px;
-  text-align: center;
-  margin: auto;
-}
-/* line 34, ../sass/style.scss */
-#outer-box:hover #inner-box {
-  opacity: .6;
-  transition: opacity .5s;
-}
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*  Journal
@@ -851,5 +815,209 @@ nav ul li a {
 .imgbadge{
   height: 10px;
   width: 10px;
+}
+
+.navbutton {
+  position: relative;
+  width: 100%;
+}
+.navlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #614051;
+}
+.navbutton:hover .navlay {
+  opacity: 1;
+}
+.navtext {
+  color: #614051;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.diwbutton {
+  position: relative;
+  width: 100%;
+}
+.diwlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #6d2020;
+}
+.diwbutton:hover .diwlay {
+  opacity: 1;
+}
+.diwtext {
+  color: #6d2020;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sankbutton {
+  position: relative;
+  width: 100%;
+}
+.sanklay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #6cafdd;
+}
+.sankbutton:hover .sanklay {
+  opacity: 1;
+}
+.sanktext {
+  color: #6cafdd;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hawbutton {
+  position: relative;
+  width: 100%;
+}
+.hawlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #dbc565;
+}
+.hawbutton:hover .hawlay {
+  opacity: 1;
+}
+.hawtext {
+  color: #dbc565;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.holibutton {
+  position: relative;
+  width: 100%;
+}
+.holilay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ca81cc;
+}
+.holibutton:hover .holilay {
+  opacity: 1;
+}
+.holitext {
+  color: #ca81cc;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.kidbutton {
+  position: relative;
+  width: 100%;
+}
+.kidlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #83cc8f;
+}
+.kidbutton:hover .kidlay {
+  opacity: 1;
+}
+.kidtext {
+  color: #83cc8f;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
