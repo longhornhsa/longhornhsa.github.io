@@ -11,7 +11,7 @@
 
 body {
   background: #fffff0;
-  color: #898989;
+  color: #fffff0;
   font-family: brandon-grotesque, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -368,7 +368,7 @@ nav ul li a {
   box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
   margin-top: 0px;
   margin-left: 0px;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -647,7 +647,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #footer {
-  background: #f7f7f7;
+  background: #fffff0;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1079,13 +1079,14 @@ a:hover {
 
 #volunteer .about-descr .p-heading {
   font-family: brandon-grotesque, sans-serif;
-  font-size: 28px;
+  font-size: 40px;
   text-align: left;
   color: #fffff0;
 }
 
 #volunteer .about-descr .separator {
   max-width: 80%;
+  font-size: 20px;
   margin-bottom: 0;
   text-align: left;
   color: #fffff0;
@@ -1139,6 +1140,9 @@ a:hover {
   font-size: 13px;
 }
 
-
+#volunteer ul li{
+  font-size: 20px;
+  line-height: 40px;
+}
 
 
