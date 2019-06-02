@@ -950,6 +950,13 @@ a:hover {
   background-size: cover;
   background-position: center center;
 }
+.bg2-image {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  background-position: center center;
+}
 
 .overlay-mf {
   background-color: #614051;
@@ -964,6 +971,7 @@ a:hover {
   width: 100%;
   opacity: .7;
 }
+
 
 .paralax-mf {
   position: relative;
@@ -1166,7 +1174,6 @@ a:hover {
 	position: relative;
 	margin-bottom: 3em;
 	height: 15em;
-	background: rgba(0,0,0,0);
 }
 
 .component > h2 {
