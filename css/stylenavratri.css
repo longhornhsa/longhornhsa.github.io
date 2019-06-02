@@ -1173,7 +1173,7 @@ a:hover {
 .component {
 	position: relative;
 	margin-bottom: 3em;
-	height: 10em;
+	height: 15em;
 }
 
 .component > h2 {
@@ -1197,10 +1197,10 @@ a:hover {
 	left: 50%;
 	z-index: 11;
 	margin-top: -2.25em;
-	margin-left: -3em;
+	margin-left: -2.25em;
 	padding-top: 0em;
-	width: 6em;
-	height: 6em;
+	width: 4.5em;
+	height: 4.5em;
 	border: none;
 	border-radius: 50%;
 	background: none;
