@@ -1197,7 +1197,7 @@ a:hover {
 	left: 50%;
 	z-index: 11;
 	margin-top: -2.25em;
-	margin-left: -2.25em;
+	margin-left: -3em;
 	padding-top: 0em;
 	width: 6em;
 	height: 6em;
@@ -1221,8 +1221,8 @@ a:hover {
 	top: 100%;
 	left: 50%;
 	z-index: 10;
-	margin-top: -10.5em;
-	margin-left: -12.5em;
+	margin-top: -13em;
+	margin-left: -13.5em;
 	width: 27em;
 	height: 27em;
 	border-radius: 50%;
