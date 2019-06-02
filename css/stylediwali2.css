@@ -83,10 +83,10 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-
 a, button {
 	outline: none;
 }
+
 nav ul li a {
   padding: 2px 0 0 0;
   position: relative;
@@ -340,7 +340,7 @@ nav ul li a {
   text-align: center;
  }
 #about .dand img{
- width:80%
+ width:70%
 }
 
 #about .theme-descr .p-heading {
@@ -950,13 +950,6 @@ a:hover {
   background-size: cover;
   background-position: center center;
 }
-.bg2-image {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  
-  background-position: center center;
-}
 
 .overlay-mf {
   background-color: #6d2020;
@@ -971,7 +964,6 @@ a:hover {
   width: 100%;
   opacity: .7;
 }
-
 
 .paralax-mf {
   position: relative;
@@ -1092,7 +1084,7 @@ a:hover {
 #volunteer .about-descr .p-heading {
   font-family: brandon-grotesque, sans-serif;
   font-size: 40px;
-  line-height:60px;
+  line-height: 60px;
   text-align: left;
   color: #fffff0;
 }
@@ -1152,12 +1144,12 @@ a:hover {
   font-weight: 400;
   font-size: 13px;
 }
-
 #volunteer ul li{
   font-size: 20px;
   line-height: 40px;
   color: #fffff0;
 }
+
 
 * {
 	position: relative;
@@ -1173,7 +1165,8 @@ a:hover {
 .component {
 	position: relative;
 	margin-bottom: 3em;
-	height: 1em;
+	height: 15em;
+	background: rgba(0,0,0,0);
 }
 
 .component > h2 {
@@ -1196,11 +1189,11 @@ a:hover {
 	top: 100%;
 	left: 50%;
 	z-index: 11;
-	margin-top: -3.5em;
-	margin-left: -3.5em;
+	margin-top: -2.25em;
+	margin-left: -2.25em;
 	padding-top: 0em;
-	width: 7em;
-	height: 7em;
+	width: 4.5em;
+	height: 4.5em;
 	border: none;
 	border-radius: 50%;
 	background: none;
@@ -1300,11 +1293,11 @@ a:hover {
 	width: 14.5em;
 	height: 14.5em;
 	border-radius: 50%;
-	background: #fffff0;
+	background: #429a67;
 	background: -webkit-radial-gradient(transparent 35%, #429a67 35%);
 	background: -moz-radial-gradient(transparent 35%, #429a67 35%);
-	background: radial-gradient(transparent 35%, #fffff0 35%);
-	color: #6d2020;
+	background: radial-gradient(transparent 35%, #6d2020 35%);
+	color: #fff;
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.2em;
@@ -1332,7 +1325,7 @@ a:hover {
 .csstransforms .cn-wrapper li a:focus {
 	background: -webkit-radial-gradient(transparent 35%, #449e6a 35%);
 	background: -moz-radial-gradient(transparent 35%, #449e6a 35%);
-	background: radial-gradient(transparent 35%, #ffffff 35%);
+	background: radial-gradient(transparent 35%, #853333 35%);
 }
 .csstransforms .cn-wrapper li a:focus {
     position: fixed; /* fix the displacement bug in webkit browsers when using tab key */
@@ -1429,7 +1422,7 @@ a:hover {
 }
 
 .no-csstransforms .cn-wrapper li.active a{
-	background-color: #fffff0;
+	background-color: #6F325C;
 	color: #fff;
 }
 
@@ -1476,7 +1469,3 @@ a:hover {
 	}
 }
 
-.empty {
-
-padding: 3em;
-}
