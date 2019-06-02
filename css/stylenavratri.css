@@ -11,7 +11,7 @@
 
 body {
   background: #fffff0;
-  color: #fffff0;
+  color: #614051;
   font-family: brandon-grotesque, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -1148,6 +1148,7 @@ a:hover {
 #volunteer ul li{
   font-size: 20px;
   line-height: 40px;
+  color: #fffff0;
 }
 
 * {
@@ -1165,7 +1166,7 @@ a:hover {
 	position: relative;
 	margin-bottom: 3em;
 	height: 15em;
-	background: rgba(0,0,0,.05);
+	background: rgba(0,0,0,0);
 }
 
 .component > h2 {
