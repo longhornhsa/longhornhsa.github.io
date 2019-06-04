@@ -346,6 +346,7 @@ nav ul li a {
 #about .theme-descr .p-heading {
   font-family: brandon-grotesque, sans-serif;
   font-size: 50px;
+  line-height: 50px;
   text-align: center;
   color: #fffff0;
 }
