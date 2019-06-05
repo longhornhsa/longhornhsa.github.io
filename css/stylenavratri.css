@@ -1171,7 +1171,7 @@ a:hover {
 
 
 .component {
-	position: relative;
+	position: fixed;
 	margin-bottom: 3em;
 	height: 1em;
 }
@@ -1192,15 +1192,15 @@ a:hover {
 }
 
 .cn-button {
-	position: absolute;
+	position: fixed;
 	top: 100%;
 	left: 50%;
 	z-index: 11;
-	margin-top: -3.5em;
-	margin-left: -3.5em;
+	margin-top: -5.5em;
+	margin-left: -2.5em;
 	padding-top: 0em;
-	width: 7em;
-	height: 7em;
+	width: 5em;
+	height: 5em;
 	border: none;
 	border-radius: 50%;
 	background: none;
@@ -1217,11 +1217,11 @@ a:hover {
 }
 
 .csstransforms .cn-wrapper {
-	position: absolute;
+	position: fixed;
 	top: 100%;
 	left: 50%;
 	z-index: 10;
-	margin-top: -13em;
+	margin-top: -18.5em;
 	margin-left: -13.5em;
 	width: 27em;
 	height: 27em;
