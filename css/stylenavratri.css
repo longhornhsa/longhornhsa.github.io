@@ -1240,8 +1240,8 @@ a:hover {
 	top: 100%;
 	left: 50%;
 	z-index: 11;
-	margin-top: -6.25em;
-	margin-left: -1.95em;
+	margin-top: -7em;
+	margin-left: -2.85em;
 	padding-top: 0em;
 	width: 7em;
 	height: 7em;
@@ -1249,8 +1249,8 @@ a:hover {
 	border-radius: 50%;
 	background: none;
   color: #fffff0;
-  width: 90px;
-  height: 60px;
+  width: 6em;
+  height: 4em;
 }
 
 .csstransforms .cn-wrapper {
@@ -1372,10 +1372,10 @@ a:hover {
 .csstransforms .cn-wrapper li a span img{
   position: relative;
   margin-top: -.5em;
-  margin-left: 11.25em;
+  margin-left: 11.65em;
   display: block;
-  width: 90px;
-  height: 60px
+  width: 6em;
+  height: 4em;
 }
 
 .csstransforms .cn-wrapper li a:hover,
