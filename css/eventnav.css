@@ -1,3 +1,16 @@
+.eventnav {
+  z-index: 1000;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.eventnav.visible {
+  z-index: 1000;
+  opacity: 1;
+  transition: all 1s;
+}
+
+
 * {
 	position: relative;
 	-moz-box-sizing: border-box;

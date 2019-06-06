@@ -23,3 +23,18 @@
 	}
 
 })();
+
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  var tags = $(".eventnav")
+  
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i]
+
+  if (scroll > 200 ) {
+    $(tag).addClass("visible")
+  } else {
+    $(tag).removeClass("visible")
+  }
+}
+});
