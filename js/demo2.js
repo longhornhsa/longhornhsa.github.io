@@ -13,7 +13,7 @@
 	    classie.add(wrapper, 'opened-nav');
 	  }
 	  else{
-	    this.innerHTML = "Menu";
+	    this.innerHTML = "<img src=\"images/logo.png\" alt=\"Events\">";
 		classie.remove(wrapper, 'opened-nav');
 	  }
 	  open = !open;

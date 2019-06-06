@@ -1204,16 +1204,53 @@ a:hover {
 	border: none;
 	border-radius: 50%;
 	background: none;
-	background-color: #fffff0;
-	color: #614051;
+	background-color: #ffffff;
+	color: #a11d15;
 	text-align: center;
 	font-weight: 700;
   font-size: 1.5em;
   font-family: inherit;
 	text-transform: uppercase;
   cursor: pointer;
+  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
 
 	-webkit-backface-visibility: hidden;
+}
+
+  .cn-button .text{
+	position: fixed;
+	padding-top: 0em;
+  border: none;
+  margin-top: 0em;
+	margin-left: -1.75em;
+	background: none;
+	color: #a11d15;
+	text-align: center;
+	font-weight: 700;
+  font-size: 1em;
+  font-family: inherit;
+	text-transform: uppercase;
+  cursor: pointer;
+
+	-webkit-backface-visibility: hidden;
+}
+
+.cn-button img{
+  position: fixed;
+	top: 100%;
+	left: 50%;
+	z-index: 11;
+	margin-top: -6.25em;
+	margin-left: -1.95em;
+	padding-top: 0em;
+	width: 7em;
+	height: 7em;
+	border: none;
+	border-radius: 50%;
+	background: none;
+  color: #fffff0;
+  width: 90px;
+  height: 60px;
 }
 
 .csstransforms .cn-wrapper {
@@ -1236,7 +1273,8 @@ a:hover {
 	-moz-transform: scale(0.1);
 	transform: scale(0.1);
 	pointer-events: none;
-	overflow: hidden;
+  overflow: hidden;
+  
 }
 
 /*cover to prevent extra space of anchors from being clickable*/
@@ -1254,6 +1292,7 @@ a:hover {
   border-radius: 50%;
   z-index:10;
   color: transparent;
+  
 }
 
 .csstransforms .opened-nav {
@@ -1266,7 +1305,9 @@ a:hover {
 	-moz-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-	pointer-events: auto;
+  pointer-events: auto;
+  
+  
 }
 
 .csstransforms .cn-wrapper li {
@@ -1289,7 +1330,8 @@ a:hover {
 	-webkit-transform-origin: 100% 100%;
 	-moz-transform-origin: 100% 100%;
 	transform-origin: 100% 100%;
-	pointer-events: none;
+  pointer-events: none;
+  
 }
 
 .csstransforms .cn-wrapper li a {
@@ -1303,8 +1345,8 @@ a:hover {
 	background: #fffff0;
 	background: -webkit-radial-gradient(transparent 35%, #429a67 35%);
 	background: -moz-radial-gradient(transparent 35%, #429a67 35%);
-	background: radial-gradient(transparent 35%, #fffff0 35%);
-	color: #614051;
+	background: radial-gradient(transparent 35%, #ffffff 35%);
+	color: #A11d15;
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.2em;
@@ -1315,7 +1357,7 @@ a:hover {
 	transform: skew(-60deg) rotate(-75deg) scale(1);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	pointer-events: auto;
+  pointer-events: auto;
 }
 
 .csstransforms .cn-wrapper li a span {
@@ -1323,8 +1365,17 @@ a:hover {
 	top: 1.8em;
 	display: block;
 	font-size: .5em;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 600;
+  text-transform: uppercase;
+}
+
+.csstransforms .cn-wrapper li a span img{
+  position: relative;
+  margin-top: -.5em;
+  margin-left: 11.25em;
+  display: block;
+  width: 90px;
+  height: 60px
 }
 
 .csstransforms .cn-wrapper li a:hover,
@@ -1332,7 +1383,7 @@ a:hover {
 .csstransforms .cn-wrapper li a:focus {
 	background: -webkit-radial-gradient(transparent 35%, #449e6a 35%);
 	background: -moz-radial-gradient(transparent 35%, #449e6a 35%);
-	background: radial-gradient(transparent 35%, #ffffff 35%);
+  background: radial-gradient(transparent 35%, rgb(223, 170, 129) 35%);
 }
 .csstransforms .cn-wrapper li a:focus {
     position: fixed; /* fix the displacement bug in webkit browsers when using tab key */
@@ -1341,14 +1392,15 @@ a:hover {
 .csstransforms .opened-nav li {
 	-webkit-transition: all .3s ease .3s;
 	-moz-transition: all .3s ease .3s;
-	transition: all .3s ease .3s;
+  transition: all .3s ease .3s;
 }
 
 .csstransforms .opened-nav li:first-child {
 	-webkit-transform: rotate(-20deg) skew(60deg);
 	-moz-transform: rotate(-20deg) skew(60deg);
 	-ms-transform: rotate(-20deg) skew(60deg);
-	transform: rotate(-20deg) skew(60deg);
+  transform: rotate(-20deg) skew(60deg);
+  
 }
 
 .csstransforms .opened-nav li:nth-child(2) {
@@ -1397,7 +1449,7 @@ a:hover {
 	overflow: hidden;
 	margin: 10em auto;
 	padding: .5em;
-	text-align: center;
+  text-align: center;
 }
 
 .no-csstransforms .cn-wrapper ul {
@@ -1411,7 +1463,7 @@ a:hover {
 	background-color: #fff;
 	text-align: center;
 	font-size: 1em;
-	line-height: 5em;
+  line-height: 5em;
 }
 
 .no-csstransforms .cn-wrapper li a {
