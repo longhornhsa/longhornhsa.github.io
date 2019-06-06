@@ -1,16 +1,13 @@
 .eventnav {
   z-index: 1000;
   opacity: 0;
-	-webkit-transition: all 1s
-	transition: all 1s;
+  transition: all 1s;
 }
 
 .eventnav.visible {
   z-index: 1000;
-	opacity: 1;
-	-webkit-transition: all 1s
-	transition: all 1s;
-	-webkit-transform: translate3d(0,0,0);
+  opacity: 1;
+  transition: all 1s;
 }
 
 
