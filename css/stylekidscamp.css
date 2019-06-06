@@ -11,7 +11,7 @@
 
 body {
   background: #fffff0;
-  color: #6d2020;
+  color: #83cc8f;
   font-family: brandon-grotesque, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 h1 {
-  color: #6d2020;
+  color: #83cc8f;
   font-weight: 600;
 }
 
@@ -45,17 +45,17 @@ h3 {
   font-weight: 900;
 }
 h4 {
-  color: #6d2020;
+  color: #83cc8f;
   font-size: 14px;
   font-weight: 600;
 }
 h5 {
-  color: #6d2020;
+  color: #83cc8f;
   font-size: 100px;
   font-weight: 900;
 }
 h6 {
-  color: #6d2020;
+  color: #83cc8f;
   font-size: 24px;
   font-weight: 600;
 }
@@ -79,7 +79,7 @@ a:hover {
 }
 
 a:hover, a:focus {
-  color: #6d2020;
+  color: #83cc8f;
   text-decoration: underline;
 }
 
@@ -108,17 +108,17 @@ p {
   margin: 25px 0;
   padding: 0;
   font-size: 15px;
-  color: #6d2020;
+  color: #83cc8f;
   line-height: 28px;
 }
 
 ::-moz-selection {
-  background: #6d2020;
+  background: #83cc8f;
   color: #fff;
 }
 
 ::selection {
-  background: #6d2020;
+  background: #83cc8f;
   color: #fff;
 }
 
@@ -206,7 +206,7 @@ p {
 }
 
 .hvr-shutter-in-horizontal:hover {
-  background: #6d2020;
+  background: #83cc8f;
 }
 
 .mb-30 {
@@ -249,7 +249,7 @@ nav ul li a {
   position: relative;
   display: block;
   font-size: 14px;
-  color: #6d2020;
+  color: #83cc8f;
   font-family: brandon-grotesque, sans-serif;
   font-weight: 500;
   line-height: 16px;
@@ -302,7 +302,7 @@ nav ul li a {
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #6d2020;
+  color: #83cc8f;
 }
 
 .header-content p {
@@ -422,7 +422,7 @@ nav ul li a {
 
 .services-block i {
   font-size: 44px;
-  color: #6d2020;
+  color: #83cc8f;
   line-height: 44px;
 }
 
@@ -449,7 +449,7 @@ nav ul li a {
 }
 
 .services-carousel .owl-dot.active {
-  background-color: #6d2020;
+  background-color: #83cc8f;
 }
 
 .owl-nav {
@@ -501,7 +501,7 @@ nav ul li a {
 }
 
 #portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
-  color: #6d2020;
+  color: #83cc8f;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -576,7 +576,7 @@ nav ul li a {
 }
 
 .journal-block .journal-info .journal-txt h4 a:hover {
-  color: #6d2020;
+  color: #83cc8f;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -687,7 +687,7 @@ nav ul li a {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #6d2020;
+  color: #83cc8f;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -838,7 +838,7 @@ nav ul li a {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #6d2020;
+  box-shadow: 0 0 0 10px #83cc8f;
   display: block;
 }
 .service-box {
@@ -851,7 +851,7 @@ nav ul li a {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color:  #6d2020;
+  background-color:  #83cc8f;
   box-shadow: 0 0 0 10px rgb(218, 173, 138);
 }
 
@@ -959,7 +959,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #6d2020;
+  background-color: #83cc8f;
 }
 
 .overlay-mf {
@@ -1158,6 +1158,8 @@ a:hover {
   line-height: 40px;
   color: #fffff0;
 }
+
+
 
 
 
