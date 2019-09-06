@@ -147,6 +147,7 @@ $(window).load(function(){
     layoutMode: 'fitRows'
   });
 
+
   $('#portfolio-flters li').on( 'click', function() {
     $("#portfolio-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
