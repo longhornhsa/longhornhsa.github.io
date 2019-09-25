@@ -885,13 +885,13 @@ nav ul li a {
   background-color: #ffffff;
   border-style: solid;
   border-width: 5px;
-  border-color: #614051;
+  border-color: #f5e0cd;
 }
 .navbutton:hover .navlay {
   opacity: 1;
 }
 .navtext {
-  color: #614051;
+  color: #f5e0cd;
   font-size: 50px;
   position: absolute;
   top: 50%;
