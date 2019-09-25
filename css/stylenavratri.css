@@ -10,7 +10,7 @@
 /*-----------------------------------------------------------------------------------*/
 
 body {
-  background: #fffff0;
+  background: #f5e0cd;
   color: #614051;
   font-family: brandon-grotesque, sans-serif;
   font-size: 15px;
@@ -36,11 +36,11 @@ h1 {
 }
 
 h2 {
-  color: #fffff0;
+  color: #f5e0cd;
   font-weight: 600;
 }
 h3 {
-  color: #fffff0;
+  color: #f5e0cd;
   font-size: 100px;
   font-weight: 900;
 }
@@ -299,7 +299,7 @@ nav ul li a {
 
 #header .div-img-bg {
   padding-bottom: 0px;
-  border: 20px solid #fffff0;
+  border: 20px solid #f5e0cd;
 }
 
 #header .div-img-bg .about-img img {
@@ -360,24 +360,38 @@ nav ul li a {
   font-family: brandon-grotesque, sans-serif;
   font-size: 50px;
   text-align: center;
-  color: #fffff0;
+  color: #f5e0cd;
 }
+#about .theme-descr .link-heading {
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #f5e0cd;
+}
+#about .theme-descr :hover .link-heading {
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #ca7327;
+}
+
 #about .theme-descr .p-event {
   font-family: brandon-grotesque, sans-serif;
   font-size: 150px;
   text-align: center;
-  color: #fffff0;
+  color: #f5e0cd;
 }
 
 #about .theme-descr .separator {
+  font-size: 20px;
   margin-bottom: 0;
   text-align: center;
-  color: #fffff0;
+  color: #f5e0cd;
 }
 
 #about .div-img-bg {
   padding-bottom: 0px;
-  border: 20px solid #fffff0;
+  border: 20px solid #f5e0cd;
 }
 
 #about .div-img-bg .about-img img {
@@ -393,14 +407,14 @@ nav ul li a {
   font-family: brandon-grotesque, sans-serif;
   font-size: 28px;
   text-align: left;
-  color: #fffff0;
+  color: #f5e0cd;
 }
 
 #about .about-descr .separator {
   max-width: 80%;
   margin-bottom: 0;
   text-align: left;
-  color: #fffff0;
+  color: #f5e0cd;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -483,7 +497,7 @@ nav ul li a {
   font-family: brandon-grotesque, sans-serif;
   font-size: 50px;
   text-align: center;
-  color: #fffff0;
+  color: #f5e0cd;
 }
 
 #portfolio .portfolio-list {
@@ -664,7 +678,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #footer {
-  background: #fffff0;
+  background: #f5e0cd;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1054,24 +1068,24 @@ a:hover {
   font-family: brandon-grotesque, sans-serif;
   font-size: 50px;
   text-align: center;
-  color: #fffff0;
+  color: #f5e0cd;
 }
 #volunteer .theme-descr .p-event {
   font-family: brandon-grotesque, sans-serif;
   font-size: 150px;
   text-align: center;
-  color: #fffff0;
+  color: #f5e0cd;
 }
 
 #volunteer .theme-descr .separator {
   margin-bottom: 0;
   text-align: center;
-  color: #fffff0;
+  color: #f5e0cd;
 }
 
 #volunteer .div-img-bg {
   padding-bottom: 0px;
-  border: 20px solid #fffff0;
+  border: 20px solid #f5e0cd;
 }
 
 #volunteer .div-img-bg .about-img img {
@@ -1088,7 +1102,7 @@ a:hover {
   font-size: 40px;
   line-height:60px;
   text-align: left;
-  color: #fffff0;
+  color: #f5e0cd;
 }
 
 #volunteer .about-descr .separator {
@@ -1096,7 +1110,7 @@ a:hover {
   font-size: 20px;
   margin-bottom: 0;
   text-align: left;
-  color: #fffff0;
+  color: #f5e0cd;
 }
 
 
@@ -1150,7 +1164,7 @@ a:hover {
 #volunteer ul li{
   font-size: 20px;
   line-height: 40px;
-  color: #fffff0;
+  color: #f5e0cd;
 }
 
 
